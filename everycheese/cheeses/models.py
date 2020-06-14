@@ -1,5 +1,7 @@
 from django.db import models
 
+from django_countries.fields import CountryField
+
 from autoslug import AutoSlugField
 from model_utils.models import TimeStampedModel
 
@@ -25,4 +27,4 @@ class Cheese(TimeStampedModel):
     def __str__(self):
         return self.name
 
-
+    country_of_origin = CountryField("Country of Origin", blank=True)
