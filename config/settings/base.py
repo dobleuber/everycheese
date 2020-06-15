@@ -84,7 +84,8 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "django_countries",
-    "unidecode"
+    "unidecode",
+    "pytest_django"
 ]
 
 LOCAL_APPS = [
